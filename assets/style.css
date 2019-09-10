@@ -1,6 +1,7 @@
 * {
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 3px;
 }
 header{
     display: table;
@@ -12,6 +13,8 @@ h3{
     display: table-cell;
     vertical-align: middle;
     padding-left: 80px;
+    letter-spacing: 3px;
+
 }
 
 nav {
@@ -28,14 +31,38 @@ a {
     vertical-align: middle;
     text-decoration: none;
     color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.603);
+    transition: all 0.2s ease-in;
+
 }
 a:not(:last-child){
     padding-right: 20px;
+}
+a:hover{
+    color: #3498db;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.603);
+    transform: translate(-1px, -3px);
 
+}
 }
 main {
     min-height: 80vh;
     background-color: #ecf0f1;
+    position: relative;
+}
+
+.box1 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: #3498db;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 3px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.329);
+
+
 }
 footer {
     height: 10vh;
